@@ -1,0 +1,12 @@
+name: Hello World Workflow
+
+on: 
+  push:
+    branches: [ main ]   # Run whenever code is pushed to 'main'
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest   # The runner (Linux VM)
+    steps:
+      - name: Print greeting
+        run: echo "🎉 Hello, GitHub Actions is working!"
